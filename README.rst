@@ -3,6 +3,7 @@ cookiecutter-saltstack-formula
 ==============================
 
 Cookiecutter template for a SaltStack Formula.
+
 This is an opinionated template with a solid focus on best practices described in
 http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html
 
@@ -40,7 +41,7 @@ Example
 ~~~~~~~
 
 An example of a formula created from this template can be found
-here: https://github.com/slafs/example-formula 
+here: https://github.com/slafs/example-formula
 (i.e. when asked about a formula name I typed ``example``)
 
 
