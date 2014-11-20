@@ -14,13 +14,10 @@
 
 {{ '{%' }} set {{ cookiecutter.formula_name }}_config = salt['pillar.get']('{{ cookiecutter.formula_name }}:config', {
     'key': 'value',
-}) {{ '%}' }}
-{%- raw %}
-{# If Helium gets released then this can be swapped #}
-{# }}, merge=True) %} #}
+}, merge=True) {{ '%}' }}
 
-{# If Lithium gets released then below code can be uncommentted because it is more DRY #}
-{#
+{% raw %}{# If Lithium gets released then below code can be uncommentted because it is more DRY #}{% endraw %}
+{{ '{#' }}
 {{ '{%' }} set {{ cookiecutter.formula_name }} = salt['grains.filter_by']({
     'default': {
         'pkg': '{{ cookiecutter.formula_name }}',
@@ -35,5 +32,4 @@
     'RedHat': {
     },
 }, grain='os_family', merge=salt['pillar.get']('{{ cookiecutter.formula_name }}:lookup'), base='default') {{ '%}' }}
-#}
-{% endraw %}
+{{ '#}' }}
