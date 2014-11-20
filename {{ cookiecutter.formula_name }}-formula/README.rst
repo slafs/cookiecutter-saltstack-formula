@@ -2,7 +2,7 @@
 {{ cookiecutter.formula_name }}
 {% for x in cookiecutter.formula_name %}={% endfor %}
 
-{{ cookiecutter.project_short_description }}
+{{ cookiecutter.formula_short_description }}
 
 .. note::
 
@@ -25,3 +25,11 @@ TODO - add description of this state
 {% for x in cookiecutter.formula_name %}-{% endfor %}---------
 
 TODO - add description of this state
+
+
+Template
+========
+
+This formula was created from a cookiecutter template.
+
+See https://github.com/slafs/cookiecutter-saltstack-formula.

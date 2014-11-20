@@ -1,11 +1,9 @@
 {
-	"full_name": "Sławek Ehlert",
-	"email": "slawomir.ehlert@gmail.com",
-	"github_username": "slafs",
-	"project_name": "SaltStack Formula Boilerplate",
 	"formula_name": "boilerplate",
-	"project_short_description": "SaltStack Formula Boilerplate contains all the boilerplate you need to create a SaltStack Formula.",
-	"release_date": "2014-11-15",
+	"formula_short_description": "SaltStack Formula Boilerplate contains all the boilerplate you need to create a SaltStack Formula.",
+	"full_name": "Sławek Ehlert",
+	"github_username": "slafs",
+	"release_date": "2014-11-20",
 	"year": "2014",
 	"version": "0.1.0"
 }
